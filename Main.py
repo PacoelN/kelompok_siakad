@@ -18,8 +18,8 @@ class MataKuliah:
 
 
 class Dosen:
-    def __init__(self, nidn, nama):
-        self.nidn = nidn
+    def __init__(self, nip, nama):
+        self.nip = nip
         self.nama = nama
         self.mata_kuliah_diampu = []
 
@@ -40,8 +40,8 @@ class Ruangan:
 
 
 class Mahasiswa:
-    def __init__(self, nim, nama):
-        self.nim = nim
+    def __init__(self, npm, nama):
+        self.npm = npm
         self.nama = nama
         self.mata_kuliah_terdaftar = []
         self.total_sks_terambil = 0
@@ -139,7 +139,7 @@ for mk in [matkul1, matkul2, matkul3]:
 
 print("Daftar Mahasiswa:")
 for mhs in [mahasiswa1, mahasiswa2, mahasiswa3]:
-    print("NIM:", mhs.nim)
+    print("NPM:", mhs.npm)
     print("Nama:", mhs.nama)
     print("Mata Kuliah Terdaftar:")
     if len(mhs.mata_kuliah_terdaftar) > 0:
